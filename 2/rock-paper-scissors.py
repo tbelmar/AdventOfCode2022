@@ -1,7 +1,5 @@
 input = open("input.txt", "r")
 
-options = ['X', 'Y', 'Z']
-
 totalScore = 0
 
 for line in input:
@@ -10,10 +8,9 @@ for line in input:
 
     c1Index = (ord(c1) - 65)
     c2Index = (ord(c2) - 88)
-
     result = (c1Index - c2Index) % 3
 
-    # extra points for
+    # extra points for choosing which tool to use
     extraPoints = c2Index + 1
     totalScore += extraPoints
 
